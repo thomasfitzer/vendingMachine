@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Vending Machine</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- Additional CSS files here -->
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+    <!-- Container for header on website -->
+    <div class="container">
+        <div class="row" id="mainTitle" style="text-align: center; margin: 5px;">
+            <h1>Vending Machine</h1>
+            <hr/>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="row" id="availItems"></div>
+            </div>
+
+            <div class="col-4" id="buttonsAndMessages">
+                <div style="text-align: center">
+                    <h4>Total Money In</h4>
+                    <input type="text" id="moneyIn" style="width: 100px;" disabled><br/>
+                    <div class="row row-cols-2">
+                        <!-- Buttons to add money -->
+                        <div class="col">
+                            <button role="button"
+                                    type="btn btn-default"
+                                    style="width: 100px; margin: 10px;"
+                                    id="addDollar">Add $1</button>
+                        </div>
+                        <div class="col">
+                            <button role="button"
+                                    type="btn btn-default"
+                                    style="width: 100px; margin: 10px;"
+                                    id="addQuarter">Add 25¢</button>
+                        </div>
+                        <div class="col">
+                            <button role="button"
+                                    type="btn btn-default"
+                                    style="width: 100px; margin: 10px;"
+                                    id="addDime">Add 10¢</button>
+                        </div>
+                        <div class="col">
+                            <button role="button"
+                                    type="btn btn-default"
+                                    style="width: 100px; margin: 10px;"
+                                    id="addNickel">Add 5¢</button>
+                        </div>
+
+                    </div>
+                </div>
+                <hr/>
+
+
+            <div class="row text-center">
+                <div style="text-align: center">
+                    <h4>Messages</h4>
+                    <input type="text" id="messageIn" disabled style="width: 300px; height: 100px; margin: 10px;"><br/>
+                    <div class="row text-center">
+                        <h4 class="col-sm-4">Item:</h4>
+                        <input type="text" id="itemIn" style="width: 100px; margin: 10px;" disabled>
+                    </div>
+                    <div class="text-center">
+                        <button role="button" type="btn btn-default" id="buyButton" style="width: 100px;">Buy Item</button>
+                    </div>
+
+                </div>
+                <hr/>
+            </div>
+            <div class="row text-center">
+                <div style="text-align: center;">
+                    <h4>Change</h4>
+                    <input type="textarea" id="returnChange" disabled style="width: 300px; height: 100px; margin: 10px;">
+                </div>
+                <div class="text-center">
+                <button role="button" type="btn btn-default" id="getMoneyBack" style="width: 100px; text-align: center;" class="text-center">
+                    Change Return
+                </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- use the the full jQuery build, NOT the slim build-->
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+<!-- custom js files -->
+<script src="js/home.js"></script>
+
+</body>
+</html>

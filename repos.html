@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row" id="mainTitle" style="text-align: center">
+        <h1>Vending Machine</h1>
+        <hr/>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="container">
+            <div class="col-9" id="availItems">
+                <input id="itemId" hidden >
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-3" id="buttonsAndMessages">
+                <div class="row">
+                    <div style="text-align: center">
+                        <h4>Total Money In</h4>
+                        <input type="text" id="moneyIn" style="width: 100px" disabled><br/>
+                        <div class="row">
+                            <!-- Buttons to add money -->
+                            <div class="col">
+                                <button role="button"
+                                        type="btn btn-default"
+                                        style="width: 100px; margin: 10px;"
+                                        id="addDollar">Add $1</button>
+                            </div>
+                            <div class="col">
+                                <button role="button"
+                                        type="btn btn-default"
+                                        style="width: 100px; margin: 10px;"
+                                        id="addQuarter">Add 25¢</button>
+                            </div>
+                            <div class="col">
+                                <button role="button"
+                                        type="btn btn-default"
+                                        style="width: 100px; margin: 10px;"
+                                        id="addDime">Add 10¢</button>
+                            </div>
+                            <div class="col">
+                                <button role="button"
+                                        type="btn btn-default"
+                                        style="width: 100px; margin: 10px;"
+                                        id="addNickel">Add 5¢</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
+                <div class="row">
+                    <div style="text-align: center">
+                        <h4>Messages</h4>
+                        <input type="text" id="messageIn" disabled><br/>
+                        <div class="row">
+                            <h4 class="col-sm-4">Item:</h4>
+                            <input type="text" id="itemIn" style="width: 100px" disabled>
+                        </div>
+                        <button role="button" type="btn btn-default" id="buyButton">Buy Item</button>
+                    </div>
+                    <hr/>
+                </div>
+                <div class="row" style="text-align: center">
+                    <div class="row">
+                        <h4>Change</h4>
+                        <input type="textarea" id="returnChange" disabled>
+                    </div>
+                    <br/>
+                    <button role="button" type="btn btn-default" id="getMoneyBack">
+                        Change Return
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!--
+                 var row = '<div class = "col-sm-3" style = "text-align: center; padding: 2px; border: 1px solid #021a40;"><a onclick="selectItem(' + id + ')">';
+                    row += '<p>' + name + '</p>';
+                    row += '<p>$' + price + '</p>';
+                    row += '<p>Quantity Left: ' + quantity + '</p>';
+                    row += '</a></div>';
+ -->
